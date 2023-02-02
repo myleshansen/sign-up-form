@@ -5,6 +5,11 @@ body {
     background-color: #f9fafb;
 }
 
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./fonts/Norse-Bold.otf");
+}
+
 .content {
     display: flex;
     margin: 0;
@@ -22,6 +27,22 @@ body {
 }
 
 .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15vh;
+    font-family: "Norse Bold";
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 6rem;
+}
+
+img {
+    height: 8em;
 }
 
 .right {
@@ -34,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: center;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     padding-left: 2.5rem;
     height: 33%;
 }
@@ -47,6 +68,34 @@ body {
     font-size: 1rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
+}
+
+.input-container {
+    display: flex;
+    column-gap: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #596D48;
+    padding: 4px 8px;
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 32px;
 }
 
 .submit {
